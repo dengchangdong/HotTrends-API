@@ -4,7 +4,7 @@ import Layout from "./Layout.js";
 
 const Home: FC = () => {
   return (
-    <Layout title="DailyHot API">
+    <Layout title="DailyTrands API">
       <main className="home">
         <div className="title">
           <h1 className="title-text">服务已正常运行</h1>
