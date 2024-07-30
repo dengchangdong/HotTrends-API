@@ -10,6 +10,7 @@ const Error: FC = (props) => {
           <h1 className="title-text">程序执行出错</h1>
           {props?.error ? <p className="content">{props.error}</p> : null}
         </div>
+      </main>
     </Layout>
   );
 };
