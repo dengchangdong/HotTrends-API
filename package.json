@@ -1,6 +1,6 @@
 {
-  "name": "dailytrands-api",
-  "version": "2.0.4",
+  "name": "hottrands-api",
+  "version": "2.0.5",
   "description": "An Api on Today's Hot list",
   "keywords": [
     "API",
