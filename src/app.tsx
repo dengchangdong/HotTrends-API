@@ -37,20 +37,20 @@ app.use(
 
 // 静态资源
 app.use(
-  "/*",
+  "/trends/*",
   serveStatic({
     root: "./public",
-    rewriteRequestPath: (path) => (path === "/favicon.ico" ? "/favicon.png" : path),
+    rewriteRequestPath: (path) => (path === "/trends/favicon.ico" ? "/trends/favicon.png" : path),
   }),
 );
 
 // 主路由
-app.route("/", registry);
+app.route("/trends/", registry);
 
 // robots
-app.get("/robots.txt", robotstxt);
+app.get("/trends/robots.txt", robotstxt);
 // 首页
-app.get("/", (c) => c.html(<Home />));
+app.get("/trends/", (c) => c.html(<Home />));
 // 404
 app.notFound((c) => c.html(<NotFound />, 404));
 // error
